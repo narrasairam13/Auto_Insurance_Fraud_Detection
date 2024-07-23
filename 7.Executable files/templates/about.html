@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    
+    <style>
+        body{
+    margin:0;
+    padding: 0;
+}
+.home{
+    background-image: url('https://res.cloudinary.com/dn0jqytyw/image/upload/v1720101596/Fraud-detection_dq9mdg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+.home1{
+    margin: 0;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+
+}
+.home1-right{
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     padding-left: 500px;
+    color:black;
+}
+.home1-left{
+    
+    color: rgb(39, 5, 114);
+    text-align: center;
+    
+}
+.heading{
+    color:rgb(181, 5, 67);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+
+    
+    
+}
+.navbar-left{
+    color:white;
+    padding-left: 50px;
+    
+}
+.navbar-right{
+    color:white;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+.a{
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 2px;
+    
+}
+.head{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+  
+  
+
+    </style>
+
+</head>
+<body>
+    <div class="home">
+        <div class="navbar">
+        
+            
+            <div class="navbar-left">
+               <h1></h1> 
+            </div>
+            <div class="navbar-right">
+                <a class="a"href="{{url_for('index')}}" alt="/index">Home</a>
+                <a class="a"href="{{url_for('about')}}" alt="/about">About</a>
+                <a class="a"href="{{url_for('contact')}}" alt="/contact">Contact</a>
+                <a class="a"href="{{url_for('predict')}}" alt="/predict">Predict</a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="home1">
+        <div class="home1-left">
+
+        </div>
+        <div class="home1-right">
+            <h1 class="head">FRAUD DETECTION</h1>
+            <h2 class="heading">1.Data Collection and Preprocessing</h2>
+         <p>The first step involves collecting Insurance data and<br>
+             preprocessing it to handle missing values,<br> 
+            Handling Categorical data and outliers, and inconsistencies.
+            </p>
+    
+         <h2 class="heading">2.Feature Engineering and Model Selection</h2>
+         <p>The second step involves selecting relevant features and<br>
+             transforming them into a format suitable <br>
+            for building a machine learning model, as well as selecting <br>
+            an appropriate algorithm such as <b>KNN,<br>
+            Naive Balyse,Decision Trees, Random Forest, or SVM.</b>
+            </p>
+    
+         <h2 class="heading">3.Model Training and Evaluation</h2>
+         <p>The third step involves training the selected model using the <br>
+            preprocessed data and evaluating its performance using metrics<br>
+             such as accuracy, precision.
+           </p>
+    
+         <h2 class="heading">4.Model Deployment</h2>
+         <p>The final step involves deploying the model in a real world<br>
+            scenario to classify Fraud claims in real-time, so that No <br>
+            Frauds can be happened in insurance Claims</p>
+        </div>
+    </div>   
+</body>
+</html>
